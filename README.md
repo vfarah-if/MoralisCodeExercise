@@ -1,4 +1,38 @@
-# Getting Started with Create React App
+# Introduction
+
+This is the collation of interesting materials around the usage of Moralis and Web3 and generating examples to play with as a coding exercise and an exploratory exercise around the use of the API.
+
+- Many videos on the subject can be found at https://www.youtube.com/c/MoralisWeb3
+
+- Sign up to setup a server @ https://admin.moralis.io/web3Api and play with the API as if you using a SWAGGER client
+
+  ![image-20211011194848764](./web3-api-admin.png)
+
+- An intro to Moralis can be found here at https://docs.moralis.io/moralis-server/web3-sdk/intro speaking up the rest framework
+
+- An updated version of the Swagger API can be found at https://deep-index.moralis.io/api-docs/ if you want to try various API's online
+
+- Setting up the client for usage can be found at https://docs.moralis.io/moralis-server/getting-started/quick-start was done in this exercise project for you using **Yarn** and the quickstart link with `yarn add moralis`
+
+- If you are using VSCode, install the snippets for code completion at https://marketplace.visualstudio.com/items?itemName=MoralisWeb3.moralis-snippets or check the video on [how to use the snippets](https://youtu.be/X82YBwLf1Vk)
+
+  ![image-20211011195759911](./moralis-snippets.png)
+
+- Configure the **.env** file with you personal details to correlate with the values that would be used to actually get stuff back from the API
+
+  ```json
+  // .env file
+  REACT_APP_MORALIS_APPLICATION_ID=<your application id generated online>
+  REACT_APP_MORALIS_API_URL=https://<YourServer>/server
+  ```
+
+  ![image-20211012004244201](./server-instance.png)
+
+- Setup a Metamask wallet and the snippets in the project will hopefully help you understand the basics of connecting and showing stuff - Check [pre-requisites](https://docs.moralis.io/moralis-server/getting-started/pre-requisites) for more information
+
+- Demo applications of all kinds can be found at https://github.com/MoralisWeb3/demo-apps to sample the API
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
