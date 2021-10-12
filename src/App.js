@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import config from './config';
 import './App.css';
 import moralis from 'moralis';
@@ -11,17 +11,27 @@ const initialUser = moralis.User.current();
 
 function App() {
   const [user, setUser] = useState(initialUser);
+  const [error, setError] = useState(undefined);
+  useEffect(() => {
+    // TODO: Update error handling later
+    if (error) console.error(error);
+  }, [error]);
   const onLogin = async () => {
     try {
       const user = await moralis.authenticate();
       setUser(user);
-    } catch (error) {
-      console.error(error);
+    } catch (err) {
+      setError(err);
     }
   };
   const onLogout = () => {
-    moralis.User.logOut();
-    setUser(null);
+    try {
+      moralis.User.logOut();
+    } catch (err) {
+      setError(err);
+    } finally {
+      setUser(null);
+    }
   };
   const onCreateAccount = () => {
     window.location.href = 'https://admin.moralis.io/';
