@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button should create a button large Button display name 1`] = `
+<button
+  class="button button--large button--secondary"
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`button should create a button simple Button display name 1`] = `
+<button
+  class="button button--medium button--secondary"
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`button should create a button small Button display name 1`] = `
+<button
+  class="button button--small button--secondary"
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`button should create a button with a primary Button display name 1`] = `
+<button
+  class="button button--medium button--primary"
+  type="button"
+>
+  Button
+</button>
+`;
