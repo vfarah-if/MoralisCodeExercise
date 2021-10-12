@@ -34,7 +34,17 @@ This is the collation of interesting materials around the usage of Moralis and W
 
 ## Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This demonstrates usage with Moralis and the Web3 framework. To date this is setup with the verson 2.0 API and will slowly be refactored into a good demonstration of several things to show how the API works.
+
+Login will prompt our metamask notification, make sure you have the plugin setup on your browser and everything configured as needed.
+
+![image-20211012083930539](./login-with-metamask.png)
+
+Once logged in, the user information will be available to demonstrate user capability.
+
+![image-20211012084655648](./loged-in-user.png)
+
+**TODO:** Some other bits of information to output from the API
 
 ## Available Scripts
 
