@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import config from './config';
 import './App.css';
 import moralis from 'moralis';
+import Header from './components/Header';
+
 const { APIURL, ApplicationId } = config;
 moralis.initialize(ApplicationId);
 moralis.serverURL = APIURL;
@@ -21,9 +23,17 @@ function App() {
     moralis.User.logOut();
     setUser(null);
   };
+  const onCreateAccount = () => {
+    window.location.href = 'https://admin.moralis.io/';
+  };
   return (
     <div className='App'>
-      <header className='App-header'>
+      <Header
+        user={user}
+        onLogin={onLogin}
+        onLogout={onLogout}
+        onCreateAccount={onCreateAccount}
+      >
         <a
           className='App-link'
           href='https://docs.moralis.io/moralis-server/getting-started/quick-start'
@@ -33,13 +43,8 @@ function App() {
           Learn Moralis Web API 3 Quickly using{' '}
           <strong>{ApplicationId || 'NOTE: .env file not configured'}</strong>
         </a>
-        {user ? (
-          <button onClick={onLogout}>Logout</button>
-        ) : (
-          <button onClick={onLogin}>Login</button>
-        )}
-      </header>
-      <pre>{JSON.stringify(user)}</pre>
+      </Header>
+      <pre className='preformatted'>{JSON.stringify(user, null, 2)}</pre>
     </div>
   );
 }
