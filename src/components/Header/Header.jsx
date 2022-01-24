@@ -64,6 +64,7 @@ Header.propTypes = {
   onLogin: PropTypes.func,
   onLogout: PropTypes.func,
   onCreateAccount: PropTypes.func,
+  children: PropTypes.any,
 };
 
 Header.defaultProps = {

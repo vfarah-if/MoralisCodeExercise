@@ -44,7 +44,9 @@ Once logged in, the user information will be available to demonstrate user capab
 
 ![image-20211012084655648](./loged-in-user.png)
 
-**TODO:** Some other bits of information to output from the API
+## Exercise
+
+An [NFT Game](https://www.youtube.com/watch?v=_VVqa7zWSxA) is the inspiration or starting point for what this can be ... Gone through tutorial and realised I need to do Solidity 
 
 ## Available Scripts
 

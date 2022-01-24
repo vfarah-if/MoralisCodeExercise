@@ -3,7 +3,6 @@ import config from './config';
 import './App.css';
 import moralis from 'moralis';
 import Header from './components/Header';
-
 const { APIURL, ApplicationId } = config;
 moralis.initialize(ApplicationId);
 moralis.serverURL = APIURL;
